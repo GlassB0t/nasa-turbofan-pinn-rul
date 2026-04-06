@@ -65,7 +65,7 @@ nasa-turbofan-pinn/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nasa-turbofan-pinn-rul.git
+git clone https://github.com/GlassB0t/nasa-turbofan-pinn-rul.git
 cd nasa-turbofan-pinn-rul
 ```
 
