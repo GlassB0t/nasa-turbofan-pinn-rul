@@ -1,4 +1,4 @@
-# 🛩️ PINN-RUL: Physics-Informed Neural Network for Turbofan Engine RUL Prediction
+# PINN-RUL: Physics-Informed Neural Network for Turbofan Engine RUL Prediction
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange?logo=pytorch)](https://pytorch.org)
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project predicts the **Remaining Useful Life (RUL)** of aircraft turbofan engines using a **Physics-Informed Neural Network (PINN)** trained on the **NASA C-MAPSS benchmark dataset**.
 
@@ -30,7 +30,7 @@ L_total = α·L_data + β·L_monotone + γ·L_boundary + δ·L_smooth
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 nasa-turbofan-pinn/
@@ -60,7 +60,7 @@ nasa-turbofan-pinn/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -105,7 +105,7 @@ python src/evaluate.py --subset FD001 --model_path results/best_model.pth
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 ```
 Input (F features)
@@ -131,7 +131,7 @@ RUL cannot be negative. Softplus (`log(1 + eˣ)`) smoothly enforces non-negativi
 
 ---
 
-## ⚙️ Feature Engineering
+## Feature Engineering
 
 | Feature Type | Details |
 |---|---|
@@ -143,7 +143,7 @@ RUL cannot be negative. Softplus (`log(1 + eˣ)`) smoothly enforces non-negativi
 
 ---
 
-## 📊 Expected Results (FD001 Test Set)
+## Expected Results (FD001 Test Set)
 
 | Metric | Random Forest (baseline) | PINN (ours) |
 |---|---|---|
@@ -157,7 +157,7 @@ RUL cannot be negative. Softplus (`log(1 + eˣ)`) smoothly enforces non-negativi
 
 ---
 
-## 📈 Outputs
+## Outputs
 
 After training, the `results/` folder contains:
 
@@ -171,7 +171,7 @@ After training, the `results/` folder contains:
 
 ---
 
-## 🔬 Dataset
+## Dataset
 
 **NASA C-MAPSS** (Commercial Modular Aero-Propulsion System Simulation)
 
@@ -182,7 +182,7 @@ After training, the `results/` folder contains:
 
 ---
 
-## 📚 References
+## References
 
 1. Saxena A., Goebel K. et al. — *Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation*, PHM 2008
 2. Raissi M., Perdikaris P., Karniadakis G.E. — *Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear PDEs*, Journal of Computational Physics, 2019
