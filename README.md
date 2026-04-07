@@ -5,7 +5,7 @@
 [![Dataset](https://img.shields.io/badge/Dataset-NASA%20C--MAPSS-green)](https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 [![Course](https://img.shields.io/badge/Course-ML%20for%20Industrial%20Applications-purple)](/)
 
-> **Course Project** — Machine Learning for Industrial Applications  
+> **Course Project** - Machine Learning for Industrial Applications  
 > IIT Kharagpur · Department of Industrial & Systems Engineering
 
 ---
@@ -18,7 +18,7 @@ Unlike a standard neural network that purely minimises prediction error, our PIN
 
 | Physics Constraint | Meaning | Loss Term |
 |---|---|---|
-| **Monotonicity** | Engine health can only worsen over time — RUL never increases | `L_monotone` |
+| **Monotonicity** | Engine health can only worsen over time - RUL never increases | `L_monotone` |
 | **Boundary Condition** | At the last cycle, RUL → 0 | `L_boundary` |
 | **Smoothness** | Degradation follows smooth physical processes (no erratic jumps) | `L_smooth` |
 
@@ -124,7 +124,7 @@ Input (F features)
 ```
 
 **Why Swish activation?**  
-Swish (`x · σ(x)`) is smooth and differentiable everywhere — a critical property when computing the gradient-based physics constraints. ReLU's non-differentiability at zero can destabilise physics loss gradients.
+Swish (`x · σ(x)`) is smooth and differentiable everywhere - a critical property when computing the gradient-based physics constraints. ReLU's non-differentiability at zero can destabilise physics loss gradients.
 
 **Why Softplus output?**  
 RUL cannot be negative. Softplus (`log(1 + eˣ)`) smoothly enforces non-negativity without the hard zero of ReLU.
@@ -184,9 +184,9 @@ After training, the `results/` folder contains:
 
 ## References
 
-1. Saxena A., Goebel K. et al. — *Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation*, PHM 2008
-2. Raissi M., Perdikaris P., Karniadakis G.E. — *Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear PDEs*, Journal of Computational Physics, 2019
-3. Li X. et al. — *Remaining Useful Life Estimation in Prognostics Using Deep Convolution Neural Networks*, Reliability Engineering & System Safety, 2018
+1. Saxena A., Goebel K. et al. - *Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation*, PHM 2008
+2. Raissi M., Perdikaris P., Karniadakis G.E. - *Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear PDEs*, Journal of Computational Physics, 2019
+3. Li X. et al. - *Remaining Useful Life Estimation in Prognostics Using Deep Convolution Neural Networks*, Reliability Engineering & System Safety, 2018
 
 ---
 
